@@ -8,13 +8,13 @@ import Noise from './components/ui/Noise'
 import { ReactLenis, useLenis } from 'lenis/react'
 
 function App() {
+
   const lenis = useLenis(({ scroll }) => {
     // called every scroll
   })
   return (
     <ReactLenis root>
       <main className='relative'>
-
         <nav className='hidden md:block'>
           <Navigation />
         </nav>
