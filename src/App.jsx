@@ -14,7 +14,7 @@ function App() {
   })
   return (
     <ReactLenis root>
-      <main className='relative'>
+      <main className='relative overflow-hidden'>
         <nav className='hidden md:block'>
           <Navigation />
         </nav>

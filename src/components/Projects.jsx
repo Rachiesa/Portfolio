@@ -8,7 +8,7 @@ import {
 
 export default function Projects() {
     return (
-        <section className='flex h-screen w-screen '>
+        <section id='projects' className='flex h-screen w-screen '>
             <div className='w-1/3 bg-secondary hidden md:block'></div>
             <div className='flex flex-col w-screen md:w-1/3 bg-primary text-tertiary font-anton p-1 gap-3'>
                 <div className='flex justify-end items-end text-md h-4/12'>

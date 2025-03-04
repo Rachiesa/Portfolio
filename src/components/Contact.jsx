@@ -31,7 +31,7 @@ export default function Contact() {
         }
     };
     return (
-        <section className='flex h-screen w-screen '>
+        <section id='contact' className='flex h-screen w-screen '>
             <div className='w-1/3 bg-secondary hidden md:block'></div>
             <div className='flex flex-col w-screen md:w-1/3  bg-primary text-tertiary font-anton p-1 gap-3'>
                 <div className='flex justify-end items-end text-md h-1/12'>
@@ -45,7 +45,6 @@ export default function Contact() {
                     <Textarea type='text' placeholder="MESSAGE" className='placeholder:text-primary text-primary h-1/6 rounded-none bg-tertiary border-none hover:bg-secondary' name='message' required />
                     <Button type='submit' className='text-primary h-1/6 w-full rounded-none bg-tertiary hover:bg-secondary border-primary'>{result}</Button>
                 </form>
-
             </div>
             <div className='w-1/3 bg-secondary hidden md:block'></div>
         </section>

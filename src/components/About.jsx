@@ -5,7 +5,7 @@ export default function About() {
         <section className='flex h-screen w-screen '>
             <div className='w-1/3 bg-secondary hidden md:block'></div>
             <div className='flex flex-col w-screen md:w-1/3 bg-primary text-tertiary font-anton p-1 gap-3'>
-                <div className='flex justify-end items-end text-md h-4/12 z-2'>
+                <div className='flex justify-end items-end text-xl h-4/12 z-2'>
                     <h2 className=''>HI, IM RACHIESA YAZID AUDI</h2>
                 </div>
                 <div className=' h-3/12 text-7xl z-2'>
