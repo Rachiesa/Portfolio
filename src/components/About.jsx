@@ -2,7 +2,7 @@ import React from 'react'
 import { gsap } from "gsap";
 import ScrollTrigger from 'gsap/src/ScrollTrigger';
 import AfterEffectsLogo from '../assets/AfterEffectsLogo.svg';
-import CSSLogo from '../assets/CssLogo.svg';
+import CSSLogo from '../assets/CSSLogo.svg';
 import GitHubLogo from '../assets/GitHubLogo.svg';
 import HTMLLogo from '../assets/HTMLLogo.svg';
 import IllustratorLogo from '../assets/IllustratorLogo.svg';
