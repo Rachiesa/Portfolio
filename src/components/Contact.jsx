@@ -33,8 +33,16 @@ export default function Contact() {
         }
     };
     gsap.registerPlugin(ScrollTrigger);
-    gsap.from("#contactitem", { scrollTrigger: "#contactitem", duration: 2, y: 100, opacity: 0 })
-    gsap.to("#contactitem", { scrollTrigger: "#contactitem", duration: 2, y: 0, opacity: 1 })
+    let tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#contact",
+            start: "top 50%",
+            end: "30% 50%",
+            scrub: true,
+        }
+
+    });
+    tl.to("#contactitem", { y: -50, opacity: 1, duration: 2 },)
     return (
         <section id='contact' className='flex h-screen w-screen '>
             <div className='w-1/3 bg-secondary hidden md:block'></div>
@@ -42,9 +50,9 @@ export default function Contact() {
                 <div className='flex justify-end items-end text-md h-1/12'>
                 </div>
                 <div className='flex items-end h-3/12 text-7xl z-2'>
-                    <h1 id='contactitem'>LET'S TALK</h1>
+                    <h1 id='contactitem' className='opacity-0'>LET'S TALK</h1>
                 </div>
-                <form id='contactitem' onSubmit={onSubmit} className='flex flex-col items-start h-7/12 gap-1 z-2'>
+                <form id='contactitem' onSubmit={onSubmit} className='opacity-0 flex flex-col items-start h-7/12 gap-1 z-2'>
                     <Input type='text' placeholder='NAME' className='placeholder:text-primary text-primary h-1/6 rounded-none bg-tertiary border-none hover:bg-secondary' name='name' required />
                     <Input type='email' placeholder='EMAIL' className='placeholder:text-primary text-primary h-1/6 rounded-none bg-tertiary border-none hover:bg-secondary' name='email' required></Input>
                     <Textarea type='text' placeholder="MESSAGE" className='placeholder:text-primary text-primary h-1/6 rounded-none bg-tertiary border-none hover:bg-secondary' name='message' required />

@@ -10,8 +10,27 @@ import ScrollTrigger from 'gsap/src/ScrollTrigger';
 
 export default function Projects() {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.from("#projectsitem", { scrollTrigger: "#projectsitem", duration: 2, y: 100, opacity: 0 })
-    gsap.to("#projectsitem", { scrollTrigger: "#projectsitem", duration: 2, y: 0, opacity: 1 })
+    let tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#projects",
+            start: "top 50%",
+            end: "30% 50%",
+            scrub: true,
+        }
+
+    });
+    tl.to("#projectsitem", { y: -50, opacity: 1, duration: 2 },)
+
+    let tlr = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#contact",
+            start: "top 50%",
+            end: "30% 50%",
+            scrub: true,
+        }
+
+    });
+    tlr.to("#projectsitem", { y: 50, opacity: 0, duration: 2 },)
 
     return (
         <section id='projects' className='flex h-screen w-screen '>
@@ -20,10 +39,10 @@ export default function Projects() {
                 <div className='flex justify-end items-end text-md h-4/12'>
                 </div>
                 <div className='flex items-end h-3/12 text-7xl z-2'>
-                    <h1 id='projectsitem'>PROJECTS</h1>
+                    <h1 id='projectsitem' className='opacity-0'>PROJECTS</h1>
                 </div>
                 <div className='h-7/12 text-md z-2'>
-                    <Accordion id="projectsitem" type="single" collapsible className="bg-tertiary text-primary w-full p-2">
+                    <Accordion id="projectsitem" type="single" collapsible className="opacity-0 bg-tertiary text-primary w-full p-2">
                         <AccordionItem value="item-1">
                             <AccordionTrigger>SPOTIFY RANDOM SONG GENERATOR</AccordionTrigger>
                             <AccordionContent>

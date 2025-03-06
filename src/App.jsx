@@ -9,12 +9,11 @@ import { ReactLenis, useLenis } from 'lenis/react'
 import { gsap } from "gsap";
 import ScrollToPlugin from 'gsap/src/ScrollToPlugin'
 
+
 function App() {
   gsap.registerPlugin(ScrollToPlugin);
 
-
   const lenis = useLenis(({ scroll }) => {
-    // called every scroll
   })
   return (
     <ReactLenis root>
