@@ -40,7 +40,6 @@ export default function Contact() {
             end: "bottom center",
             toggleActions: "play none none reverse",
             scrub: false,
-            markers: true
         }
 
     });
