@@ -1,6 +1,18 @@
 import React from 'react'
 import { gsap } from "gsap";
 import ScrollTrigger from 'gsap/src/ScrollTrigger';
+import AfterEffectsLogo from '../assets/AfterEffectsLogo.svg';
+import CSSLogo from '../assets/CssLogo.svg';
+import GitHubLogo from '../assets/GitHubLogo.svg';
+import HTMLLogo from '../assets/HTMLLogo.svg';
+import IllustratorLogo from '../assets/IllustratorLogo.svg';
+import JSLogo from '../assets/JSLogo.svg';
+import LinkedinLogo from '../assets/LinkedinLogo.svg';
+import MailLogo from '../assets/MailLogo.svg';
+import PhotoshopLogo from '../assets/PhotoshopLogo.svg';
+import ReactLogo from '../assets/ReactLogo.svg';
+import TailwindLogo from '../assets/TailwindLogo.svg';
+
 
 export default function About() {
     gsap.registerPlugin(ScrollTrigger);
@@ -70,21 +82,21 @@ export default function About() {
                     </p>
                     <div id='aboutitem' className=' opacity-0 flex p-1 h-1/2'>
                         <div className='grid grid-cols-5 gap-1'>
-                            <img onClick={() => { window.open("https://reactjs.org/", "_blank") }} id='react' src="src/assets/React.svg" alt="React" className=' hover:animate-pulse rounded-sm' ></img>
-                            <img onClick={() => { window.open("https://tailwindcss.com/", "_blank") }} id='tailwind' src="src/assets/Tailwind.svg" alt="Tailwind" className='hover:animate-pulse rounded-sm' ></img>
-                            <img onClick={() => { window.open("https://developer.mozilla.org/en-US/docs/Web/JavaScript", "_blank") }} id='js' src="src/assets/JS.svg" alt="JavaScript" className='hover:animate-pulse rounded-sm' ></img>
-                            <img onClick={() => { window.open("https://developer.mozilla.org/en-US/docs/Web/HTML", "_blank") }} id='html' src="src/assets/HTML.svg" alt="HTML" className='hover:animate-pulse rounded-sm' ></img>
-                            <img onClick={() => { window.open("https://developer.mozilla.org/en-US/docs/Web/CSS", "_blank") }} id='css' src="src/assets/CSS.svg" alt="CSS" className='hover:animate-pulse rounded-sm' ></img>
-                            <img src="" alt="React" className='invisible' ></img>
-                            <img onClick={() => { window.open("https://www.adobe.com/products/photoshop.html", "_blank") }} id='photoshop' src="src/assets/Photoshop.svg" alt="Photoshop" className='hover:animate-pulse rounded-sm' ></img>
-                            <img onClick={() => { window.open("https://www.adobe.com/products/illustrator.html", "_blank") }} id='illustrator' src="src/assets/Illustrator.svg" alt="Illustrator" className='hover:animate-pulse rounded-sm' ></img>
-                            <img onClick={() => { window.open("https://www.adobe.com/products/aftereffects.html", "_blank") }} id='aftereffects' src="src/assets/AfterEffects.svg" alt="AfterEffects" className='hover:animate-pulse rounded-sm' ></img>
-                            <img src="" alt="React" className='invisible' ></img>
-                            <img onClick={() => { window.open("https://mail.google.com/mail/?view=cm&fs=1&to=audichiesa99@gmail.com&su=Hello, Rachiesa let's talk", "_blank") }} id='email' src="src/assets/Mail.svg" alt="Email" className='hover:animate-pulse rounded-sm' ></img>
-                            <img src="" alt="React" className='invisible' ></img>
-                            <img onClick={() => { window.open("https://github.com/Rachiesa", "_blank") }} id='github' src="src/assets/GitHub.svg" alt="Github" className='hover:animate-pulse rounded-sm' ></img>
-                            <img src="" alt="React" className='invisible' ></img>
-                            <img id='linkedin' src="src/assets/Linkedin.svg" alt="Linkedin" className='hover:animate-pulse rounded-sm' ></img>
+                            <img onClick={() => { window.open("https://reactjs.org/", "_blank") }} id='react' src={ReactLogo} alt="React" className=' hover:animate-pulse rounded-sm' ></img>
+                            <img onClick={() => { window.open("https://tailwindcss.com/", "_blank") }} id='tailwind' src={TailwindLogo} alt="Tailwind" className='hover:animate-pulse rounded-sm' ></img>
+                            <img onClick={() => { window.open("https://developer.mozilla.org/en-US/docs/Web/JavaScript", "_blank") }} id='js' src={JSLogo} alt="JavaScript" className='hover:animate-pulse rounded-sm' ></img>
+                            <img onClick={() => { window.open("https://developer.mozilla.org/en-US/docs/Web/HTML", "_blank") }} id='html' src={HTMLLogo} alt="HTML" className='hover:animate-pulse rounded-sm' ></img>
+                            <img onClick={() => { window.open("https://developer.mozilla.org/en-US/docs/Web/CSS", "_blank") }} id='css' src={CSSLogo} alt="CSS" className='hover:animate-pulse rounded-sm' ></img>
+                            <img alt="React" className='invisible' ></img>
+                            <img onClick={() => { window.open("https://www.adobe.com/products/photoshop.html", "_blank") }} id='photoshop' src={PhotoshopLogo} alt="Photoshop" className='hover:animate-pulse rounded-sm' ></img>
+                            <img onClick={() => { window.open("https://www.adobe.com/products/illustrator.html", "_blank") }} id='illustrator' src={IllustratorLogo} alt="Illustrator" className='hover:animate-pulse rounded-sm' ></img>
+                            <img onClick={() => { window.open("https://www.adobe.com/products/aftereffects.html", "_blank") }} id='aftereffects' src={AfterEffectsLogo} alt="AfterEffects" className='hover:animate-pulse rounded-sm' ></img>
+                            <img alt="React" className='invisible' ></img>
+                            <img onClick={() => { window.open("https://mail.google.com/mail/?view=cm&fs=1&to=audichiesa99@gmail.com&su=Hello, Rachiesa let's talk", "_blank") }} id='email' src={MailLogo} alt="Email" className='hover:animate-pulse rounded-sm' ></img>
+                            <img alt="React" className='invisible' ></img>
+                            <img onClick={() => { window.open("https://github.com/Rachiesa", "_blank") }} id='github' src={GitHubLogo} alt="Github" className='hover:animate-pulse rounded-sm' ></img>
+                            <img alt="React" className='invisible' ></img>
+                            <img id='linkedin' src={LinkedinLogo} alt="Linkedin" className='hover:animate-pulse rounded-sm' ></img>
                         </div>
                     </div>
                 </div>
