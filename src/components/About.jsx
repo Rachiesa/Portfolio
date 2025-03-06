@@ -7,7 +7,7 @@ import GitHubLogo from '../assets/GitHubLogo.svg';
 import HTMLLogo from '../assets/HTMLLogo.svg';
 import IllustratorLogo from '../assets/IllustratorLogo.svg';
 import JSLogo from '../assets/JSLogo.svg';
-import LinkedinLogo from '../assets/LinkedinLogo.svg';
+import LinkedinLogo from '../assets/LinkedInLogo.svg';
 import MailLogo from '../assets/MailLogo.svg';
 import PhotoshopLogo from '../assets/PhotoshopLogo.svg';
 import ReactLogo from '../assets/ReactLogo.svg';
