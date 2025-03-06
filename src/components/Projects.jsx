@@ -13,24 +13,16 @@ export default function Projects() {
     let tl = gsap.timeline({
         scrollTrigger: {
             trigger: "#projects",
-            start: "top 50%",
-            end: "30% 50%",
-            scrub: true,
+            start: "top center",
+            end: "bottom center",
+            toggleActions: "play reverse play reverse",
+            scrub: false,
         }
 
     });
-    tl.to("#projectsitem", { y: -50, opacity: 1, duration: 2 },)
+    tl.to("#projectsitem", { y: -50, opacity: 1, duration: 1 },)
 
-    let tlr = gsap.timeline({
-        scrollTrigger: {
-            trigger: "#contact",
-            start: "top 50%",
-            end: "30% 50%",
-            scrub: true,
-        }
 
-    });
-    tlr.to("#projectsitem", { y: 50, opacity: 0, duration: 2 },)
 
     return (
         <section id='projects' className='flex h-screen w-screen '>

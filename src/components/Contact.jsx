@@ -36,13 +36,15 @@ export default function Contact() {
     let tl = gsap.timeline({
         scrollTrigger: {
             trigger: "#contact",
-            start: "top 50%",
-            end: "30% 50%",
-            scrub: true,
+            start: "top center",
+            end: "bottom center",
+            toggleActions: "play none none reverse",
+            scrub: false,
+            markers: true
         }
 
     });
-    tl.to("#contactitem", { y: -50, opacity: 1, duration: 2 },)
+    tl.to("#contactitem", { y: -50, opacity: 1, duration: 1 },)
     return (
         <section id='contact' className='flex h-screen w-screen '>
             <div className='w-1/3 bg-secondary hidden md:block'></div>
@@ -53,10 +55,10 @@ export default function Contact() {
                     <h1 id='contactitem' className='opacity-0'>LET'S TALK</h1>
                 </div>
                 <form id='contactitem' onSubmit={onSubmit} className='opacity-0 flex flex-col items-start h-7/12 gap-1 z-2'>
-                    <Input type='text' placeholder='NAME' className='placeholder:text-primary text-primary h-1/6 rounded-none bg-tertiary border-none hover:bg-secondary' name='name' required />
-                    <Input type='email' placeholder='EMAIL' className='placeholder:text-primary text-primary h-1/6 rounded-none bg-tertiary border-none hover:bg-secondary' name='email' required></Input>
-                    <Textarea type='text' placeholder="MESSAGE" className='placeholder:text-primary text-primary h-1/6 rounded-none bg-tertiary border-none hover:bg-secondary' name='message' required />
-                    <Button type='submit' className='text-primary h-1/6 w-full rounded-none bg-tertiary hover:bg-secondary border-primary'>{result}</Button>
+                    <Input type='text' placeholder='NAME' className='hover:animate-pulse placeholder:text-primary text-primary h-1/6 rounded-none bg-tertiary border-none hover:bg-secondary' name='name' required />
+                    <Input type='email' placeholder='EMAIL' className='hover:animate-pulse placeholder:text-primary text-primary h-1/6 rounded-none bg-tertiary border-none hover:bg-secondary' name='email' required></Input>
+                    <Textarea type='text' placeholder="MESSAGE" className='hover:animate-pulse placeholder:text-primary text-primary h-1/6 rounded-none bg-tertiary border-none hover:bg-secondary' name='message' required />
+                    <Button type='submit' className='hover:animate-pulse text-primary h-1/6 w-full rounded-none bg-tertiary hover:bg-secondary border-primary'>{result}</Button>
                 </form>
             </div>
             <div className='w-1/3 bg-secondary hidden md:block'></div>

@@ -19,7 +19,7 @@ function App() {
     <ReactLenis root>
       <main className='relative overflow-hidden'>
         <nav>
-          <div className='fixed top-0 right-0 z-10 text-tertiary font-anton text-xl p-1 gap-1'>
+          <div className='flex fixed inset-x-0 justify-center md:justify-end top-0 md:right-0 z-10 text-tertiary font-anton md:text-xl p-1 gap-3'>
             <div><button onClick={() => { gsap.to(window, { duration: 1, scrollTo: "#about" }) }}
               className=''>/About</button></div>
             <div><button onClick={() => { gsap.to(window, { duration: 1, scrollTo: "#projects" }) }}

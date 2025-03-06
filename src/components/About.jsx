@@ -19,24 +19,15 @@ export default function About() {
     let tl = gsap.timeline({
         scrollTrigger: {
             trigger: "#about",
-            start: "top 50%",
-            end: "30% 50%",
-            scrub: true,
+            start: "top center",
+            end: "bottom center",
+            toggleActions: "play reverse play reverse",
+            scrub: false,
+
         }
 
     });
-    tl.to("#aboutitem", { y: -50, opacity: 1, duration: 2 },)
-
-    let tlr = gsap.timeline({
-        scrollTrigger: {
-            trigger: "#projects",
-            start: "top 50%",
-            end: "30% 50%",
-            scrub: true,
-        }
-
-    });
-    tlr.to("#aboutitem", { y: 50, opacity: 0, duration: 2 },)
+    tl.to("#aboutitem", { y: -50, opacity: 1, duration: 1 },)
 
     let itl = gsap.timeline({ repeat: -1 });
     itl.to("#react", { y: -2, duration: 0.1 },)
