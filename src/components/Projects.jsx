@@ -21,6 +21,8 @@ export default function Projects() {
 
     });
     tl.to("#projectsitem", { y: -50, opacity: 1, duration: 1 },)
+    gsap.utils.snap(0.1);
+
 
 
 
