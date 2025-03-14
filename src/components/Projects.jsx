@@ -38,18 +38,21 @@ export default function Projects() {
                 <div className='h-7/12 text-md z-2'>
                     <Accordion id="projectsitem" type="single" collapsible className="opacity-0 bg-tertiary text-primary w-full p-2">
                         <AccordionItem value="item-1">
-                            <AccordionTrigger className="text-xl">GAMES.FUN</AccordionTrigger>
-                            <AccordionContent className="font-trispace">
-                                JUST CLASSIC GAMES WITH SOME ANIMATION
-                            </AccordionContent>
-                            <AccordionContent className="font-anton text-md">
-                                STATUS : <span className='animate-pulse'>ON.PROGGRES</span>
-                            </AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value="item-2">
                             <AccordionTrigger className="text-xl">SPOTIFY.UTILS</AccordionTrigger>
                             <AccordionContent className="font-trispace">
                                 UTILIZEING SPOTIFY API FOR EXPLORING NEW MUSIC AND ARTISTS
+                            </AccordionContent>
+                            <AccordionContent className="font-anton text-md">
+                                <a href='https://spotify-utils.vercel.app' target='_blank' className='hover:underline'>WEB-APP</a> <br /><a href='https://github.com/Rachiesa/SpotifyUtils' target='_blank' className='hover:underline'>SOURCE-CODE</a>
+                            </AccordionContent>
+                            <AccordionContent className="font-anton text-md">
+                                STATUS : <span className='animate-pulse'>ONLINE</span>
+                            </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem value="item-2">
+                            <AccordionTrigger className="text-xl">GAMES.FUN</AccordionTrigger>
+                            <AccordionContent className="font-trispace">
+                                JUST CLASSIC GAMES WITH SOME ANIMATION
                             </AccordionContent>
                             <AccordionContent className="font-anton text-md">
                                 STATUS : <span className='animate-pulse'>ON.PROGGRES</span>
