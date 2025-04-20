@@ -43,16 +43,16 @@ export default function Projects() {
                                 UTILIZEING SPOTIFY API FOR EXPLORING NEW MUSIC AND ARTISTS
                             </AccordionContent>
                             <AccordionContent className="font-anton text-md">
-                                <a href='https://spotify-utils.vercel.app' target='_blank' className='hover:underline'>WEB-APP</a> <br /><a href='https://github.com/Rachiesa/SpotifyUtils' target='_blank' className='hover:underline'>SOURCE-CODE</a>
+                                <a href='https://spotify-utils.vercel.app' target='_blank' className='hover:underline'>{">> WEB-APP"}</a> <br /><a href='https://github.com/Rachiesa/SpotifyUtils' target='_blank' className='hover:underline'> {">> SOURCE-CODE"}</a>
                             </AccordionContent>
                             <AccordionContent className="font-anton text-md">
                                 STATUS : <span className='animate-pulse'>ONLINE</span>
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-2">
-                            <AccordionTrigger className="text-xl">GAMES.FUN</AccordionTrigger>
+                            <AccordionTrigger className="text-xl">BERITA - BERITA</AccordionTrigger>
                             <AccordionContent className="font-trispace">
-                                JUST CLASSIC GAMES WITH SOME ANIMATION
+                                UTILIZEING BERITA-INDO-API FOR EXPLORING NEW INDONESIAN NEWS
                             </AccordionContent>
                             <AccordionContent className="font-anton text-md">
                                 STATUS : <span className='animate-pulse'>ON.PROGGRES</span>
